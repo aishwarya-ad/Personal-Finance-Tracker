@@ -34,8 +34,8 @@ const BudgetList = () => {
         const response = await axios.delete(`http://localhost:8000/budget/${budgetId}`, {
             headers: { Authorization: `Bearer ${token}` }
         })
-        setBudgets(budgets.filter(trx => trx._id !== budgetId))
-        // setBudgets((prevBudgets) => prevBudgets.filter(trx => trx._id !== budgetId));
+        // setBudgets(budgets.filter(trx => trx._id !== budgetId))
+        setBudgets((prevBudgets) => prevBudgets.filter(budget => budget._id !== budgetId));
         const { message } = response.data
         toast.success(message)
     }
