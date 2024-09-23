@@ -1,0 +1,78 @@
+/* AddTransactionForm.css */
+
+/* Center the transaction form */
+.add-transaction-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+/* Styling the transaction form box */
+.add-transaction-form {
+    background-color: #f4f4f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Headline */
+.add-transaction-form h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Form fields */
+.add-transaction-form input,
+.add-transaction-form select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #ddd;
+    color: #333;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.add-transaction-form input:focus,
+.add-transaction-form select:focus {
+    border-color: #5cb85c;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Add transaction button */
+.add-transaction-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #5cb85c;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-transaction-form button:hover {
+    background-color: #4cae4c;
+}
+
+/* Add some spacing for small screens */
+@media (max-width: 600px) {
+    .add-transaction-form {
+        padding: 1.5rem;
+    }
+
+    .add-transaction-form h2 {
+        font-size: 1.5rem;
+    }
+}

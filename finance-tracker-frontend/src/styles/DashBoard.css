@@ -1,0 +1,38 @@
+/* DashboardPage.css */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #242424;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #b5bfca;
+    text-align: center;
+}
+
+.charts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between charts */
+    justify-content: space-between;
+}
+
+.chart {
+    flex: 1 1 45%; /* Flex basis of 45% for each chart container */
+    min-width: 400px; /* Minimum width to ensure charts don't get too small */
+    background-color: #242424;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #b5bfca;
+}

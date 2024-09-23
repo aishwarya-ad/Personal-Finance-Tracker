@@ -1,0 +1,90 @@
+/* RegisterPage.css */
+
+/* Main container for the registration form */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+/* Registration form */
+.register-form {
+    background-color: #f2f2f2;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Title for the registration page */
+.register-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Input fields */
+.register-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #f8f8f8;
+}
+
+/* Placeholder text color */
+.register-form input::placeholder {
+    color: #aaa;
+}
+
+/* Register button */
+.register-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.register-form button:hover {
+    background-color: #4cae4c;
+}
+
+/* Error message */
+.register-form p {
+    text-align: center;
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .register-form {
+        padding: 1.5rem;
+    }
+
+    .register-form h2 {
+        font-size: 1.8rem;
+    }
+
+    .register-form input {
+        font-size: 0.95rem;
+    }
+
+    .register-form button {
+        font-size: 1rem;
+    }
+}
